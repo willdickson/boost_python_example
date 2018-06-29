@@ -22,6 +22,9 @@ class TestClass
         np::ndarray get_ndarray(int n, int m);
         np::ndarray modify_ndarray(np::ndarray in_array);
 
+        void print_hello();
+        void pass_a_class(TestClass &test_class);
+
 
     protected:
 

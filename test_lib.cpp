@@ -18,5 +18,8 @@ BOOST_PYTHON_MODULE(test_lib)
         .def("get_the_int", &TestClass::get_the_int)
         .def("set_the_int", &TestClass::set_the_int)
         .def("get_ndarray", &TestClass::get_ndarray)
-        .def("modify_ndarray", &TestClass::modify_ndarray);
+        .def("modify_ndarray", &TestClass::modify_ndarray)
+        .def("print_hello", &TestClass::print_hello)
+        .def("pass_a_class", &TestClass::pass_a_class);
+
 }

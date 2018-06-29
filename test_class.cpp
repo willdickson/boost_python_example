@@ -75,3 +75,16 @@ np::ndarray TestClass::modify_ndarray(np::ndarray in_array)
 
     return in_array;
 }
+
+
+
+void TestClass::print_hello()
+{
+    std::cout << "hello, " << "the_int_ = " << the_int_ << std::endl;
+}
+
+
+void TestClass::pass_a_class(TestClass &test_class)
+{
+    test_class.print_hello();
+}
